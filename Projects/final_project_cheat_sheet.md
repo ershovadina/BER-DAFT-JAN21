@@ -25,6 +25,8 @@ In the following chapters you'll find various datasources. As examples, we expla
 
 ## Some datasets & their potential relevance for the final project
 
+Find the links below this section!
+
 #### Telecom Customer Churn
 
 This data set is great for practicing supervised machine learning. The most obvious supervised learning problem to model with this data set is attempting to predict churn (whether or not a customer is going to leave). Another supervised problem you can try to solve is predicting tenure, or how long a customer will end up staying with the company. There are also a lot of ways to slice, dice, and analyze this data set - for example, looking at how monthly charges increase or decrease depending on different types of contracts, tenure, and services provided.
@@ -57,16 +59,18 @@ This is another data set where you can practice your SQL joins as well as data w
 
 ### 2. Dataset aggregating websites
 
-#### Berlin open data
+Name | description | link
+--------------------------------|-------------|---------------------
+Google dataset search           ||[link](https://datasetsearch.research.google.com/)
+UCI Machine learning repository ||[link](https://archive.ics.uci.edu/ml/index.php)
+Berlin open data repository  | Berlin specific Datasets (German knowledge helpful)  | https://daten.berlin.de/tags/open-data
 
-* Berlin specific Datasets (German knowledge helpful) https://daten.berlin.de/tags/open-data
-
-#### Kaggle
+#### Kaggle sets
 
 These are all Kaggle data sets, so you can gain some context about them by looking at the field descriptions and the `Overview` tab for each data set. You can also get project ideas by looking at the different `Kernels` that people have created using the data sets and the approaches they have taken, but please **do not** plagiarize or copy someone else's work. Remember that the goal of this project is to demonstrate *your* skills, not someone else's.
 
   * [Human Resources Dataset](https://www.kaggle.com/rhuebner/human-resources-data-set)
-  *[Craft Beers Dataset](https://www.kaggle.com/nickhould/craft-cans)
+  * [Craft Beers Dataset](https://www.kaggle.com/nickhould/craft-cans)
   * [Flight Delays and Cancellation Dataset](https://www.kaggle.com/usdot/flight-delays)
   * [Mental Health in Tech Survey Data](https://www.kaggle.com/osmi/mental-health-in-tech-survey)
   * [Telecom Customer Churn Dataset](https://www.kaggle.com/blastchar/telco-customer-churn)
@@ -75,10 +79,15 @@ These are all Kaggle data sets, so you can gain some context about them by looki
 
 * [24 Ultimate Data Science (Machine Learning) Projects To Boost Your Knowledge and Skills (& can be accessed freely)](https://www.analyticsvidhya.com/blog/2018/05/24-ultimate-data-science-projects-to-boost-your-knowledge-and-skills/)
 
+## API-Sources
+
+* ["AnyAPI"](https://any-api.com/)
+
 ---
 
 # Data Visualization
 
+* [Python graph gallery](https://python-graph-gallery.com/all-charts/). A vast collection of matplotlib based (seaborn, matplotlib, pandas, etc.) plots with their respective code snippets. If you need a plot, pick one, check the code, copy-paste it and change it according to your needs
 * [80 Data Visualization examples using location data and maps](https://carto.com/blog/eighty-data-visualizations-examples-using-location-data-maps/)
 
 
