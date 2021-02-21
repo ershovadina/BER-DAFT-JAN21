@@ -8,12 +8,22 @@
 
 * Obtain timely feedback on your ideas, plans, progress, and products from the instructional staff. This ensures you stay on the right track and deliver impressive results.
 
+* Borrowed from agile project development: Set a relatively low bar for your first project iteration (meaning: what you want to achieve, which question should be answered?). Then try to reach that first iteration quickly. It doesn't have to look nice. But the idea is: You will now build on that and maybe answer an extended question in the remaining time. For example:
+  * 1st iteration: I have lot of animal sound data and I want to train an unsupervised model, which is able to (cluster) predict, whether that sound is a dog barking or not.
+  * 2nd iteration: Building on that, I try to predict not only `Dog | No dog` but also multiple categories, e.g. `dog | cat | rattle snake | monkey | none of these`.
 * Be prepared for technical difficulties. Manage your time wisely and pace yourself. Stick to the project agenda strictly.
 
-* Commit your codes and push to Github on a regular basis. You should commit every time you complete a task and push at least once a day. This will help you avoid accidental data loss and is also the easiest way to document your iterative development process.
+* Github:
+  * Commit your codes and push to Github on a regular basis.
+  * You should commit every time you complete a task and push at least once a day.
+  * Aim for meaningful commit messages so that later when you look at your commits they still make sense to you.
+  All of this will help you avoid accidental data loss and is also the easiest way to document your iterative development process.
 
-* Before the final project presentation, test every component and step of your demo. Make sure your demo will run smoothly.
-
+* Regarding the presentation
+  * test every component and step of your demo. Make sure your demo will run smoothly.
+  * Since the goal here is to address a **general audience** it can be beneficial to rehearse your talk in front of non-technical people (family, friends, etc.)
+  * make sure your can work with the **remote tools** (Zoom) to control your presentation (share screen (which?), eventually share sound, pointer, etc.). Feel free to use the zoom classroom to rehearse that in the week before the presentation
+  * the day before all presentations start, we give you the opportunity for a final rehearsal in a breakout room in front of the teaching team. This is optional, but a lot of students made good experience with that in the past.
 
 
 
