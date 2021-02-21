@@ -4,6 +4,8 @@
 
 * Related to the previous: Chosing a topic where you have background knowledge and/or a passion in can make make everything easier.
 
+* A lot of us do it intuitively, but it can be beneficial to recall it here: A recommended way of thinking when it comes to tackle a complex problem like a *data analytics final project* is [First Principles](https://fs.blog/2018/04/first-principles/), briefly: Break the problem down to sub-problems. Look at the sub-problems, break them down, etc. This can be applied at any stage of your project, may it be the structuring of your workflow or on a very basic level, writing that for-loop that scrapes your tables on a website, where you would first make it work for one table. Once done, the step to making it work for all of them, is easy.
+
 * Obtain timely feedback on your ideas, plans, progress, and products from the instructional staff. This ensures you stay on the right track and deliver impressive results.
 
 * Be prepared for technical difficulties. Manage your time wisely and pace yourself. Stick to the project agenda strictly.
@@ -89,6 +91,16 @@ These are all Kaggle data sets, so you can gain some context about them by looki
 
 * [Python graph gallery](https://python-graph-gallery.com/all-charts/). A vast collection of matplotlib based (seaborn, matplotlib, pandas, etc.) plots with their respective code snippets. If you need a plot, pick one, check the code, copy-paste it and change it according to your needs
 * [80 Data Visualization examples using location data and maps](https://carto.com/blog/eighty-data-visualizations-examples-using-location-data-maps/)
+
+# General Python hints
+
+* A lot of times you will face the situation of having to perform a job on "huge thing", such as:
+  * data cleaning for multiple columns in a dataframe,
+  * data cleaning for a column that contains multiple entries
+  * scrape multiple websites
+  * on a website, scrape a table and extract only one entry of a row
+  * etc.
+  A general approach of problem solving here can be borrowed from *
 
 
 ---
