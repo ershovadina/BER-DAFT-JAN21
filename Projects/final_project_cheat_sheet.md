@@ -110,7 +110,35 @@ These are all Kaggle data sets, so you can gain some context about them by looki
   * scrape multiple websites
   * on a website, scrape a table and extract only one entry of a row
   * etc.
-  A general approach of problem solving here can be borrowed from *
+
+  A general approach of problem solving here can be borrowed from *first principles thinking*: **First make it work for one case** (before of course, find out the structure/the patterns/the similarities of that single case within the context of the all cases), **then scale up and apply it to all cases**
+
+  Some examples:
+  * **data cleaning**:
+    define a function first, which does the job for one specific value `x` in your columns, then use it in die `.apply()` function of a dataframe
+
+    ```python
+    def my_cleaning_function(x):
+        return x.lstrip('_D4hj2', '').rstrip('MON_', '')
+
+    df['column_to_clean'] =  df['column_to_clean'].apply(my_cleaning_function)
+    ```
+
+  * **webscraping**:
+    You want to scrape search results on *imdb* which are presented in multiple pages that you have to click through. Approach: You would want to write the code which scrapes one single page first, maybe even put it into a function. Then find out the pattern of the URL, which all result pages have in common, and then alter your function in a way, that you can input any (search result) url in it. And ultimately construct a loop in which you would generate your desired URL's, throw these into your function which gets executed in every loop, e.g.
+
+    ```python
+    iterations = range(1, 631, 50)
+    for i in iterations:
+    # assemble the url:
+      start_at= str(i)
+      url = "https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,1992-12-31&user_rating=7.5,&start=" + start_at + "&ref_=adv_nxt"
+
+      # download html with a get request:
+      response = requests.get(url)
+
+      # in the following: store that into a soup
+    ```  
 
 
 ---
