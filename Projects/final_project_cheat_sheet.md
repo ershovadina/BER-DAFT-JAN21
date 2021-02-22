@@ -8,12 +8,22 @@
 
 * Obtain timely feedback on your ideas, plans, progress, and products from the instructional staff. This ensures you stay on the right track and deliver impressive results.
 
+* Borrowed from agile project development: Set a relatively low bar for your first project iteration (meaning: what you want to achieve, which question should be answered?). Then try to reach that first iteration quickly. It doesn't have to look nice. But the idea is: You will now build on that and maybe answer an extended question in the remaining time. For example:
+  * 1st iteration: I have lot of animal sound data and I want to train an unsupervised model, which is able to (cluster) predict, whether that sound is a dog barking or not.
+  * 2nd iteration: Building on that, I try to predict not only `Dog | No dog` but also multiple categories, e.g. `dog | cat | rattle snake | monkey | none of these`.
 * Be prepared for technical difficulties. Manage your time wisely and pace yourself. Stick to the project agenda strictly.
 
-* Commit your codes and push to Github on a regular basis. You should commit every time you complete a task and push at least once a day. This will help you avoid accidental data loss and is also the easiest way to document your iterative development process.
+* Github:
+  * Commit your codes and push to Github on a regular basis.
+  * You should commit every time you complete a task and push at least once a day.
+  * Aim for meaningful commit messages so that later when you look at your commits they still make sense to you.
+  All of this will help you avoid accidental data loss and is also the easiest way to document your iterative development process.
 
-* Before the final project presentation, test every component and step of your demo. Make sure your demo will run smoothly.
-
+* Regarding the presentation
+  * test every component and step of your demo. Make sure your demo will run smoothly.
+  * Since the goal here is to address a **general audience** it can be beneficial to rehearse your talk in front of non-technical people (family, friends, etc.)
+  * make sure your can work with the **remote tools** (Zoom) to control your presentation (share screen (which?), eventually share sound, pointer, etc.). Feel free to use the zoom classroom to rehearse that in the week before the presentation
+  * the day before all presentations start, we give you the opportunity for a final rehearsal in a breakout room in front of the teaching team. This is optional, but a lot of students made good experience with that in the past.
 
 
 
@@ -100,7 +110,35 @@ These are all Kaggle data sets, so you can gain some context about them by looki
   * scrape multiple websites
   * on a website, scrape a table and extract only one entry of a row
   * etc.
-  A general approach of problem solving here can be borrowed from *
+
+  A general approach of problem solving here can be borrowed from *first principles thinking*: **First make it work for one case** (before of course, find out the structure/the patterns/the similarities of that single case within the context of the all cases), **then scale up and apply it to all cases**
+
+  Some examples:
+  * **data cleaning**:
+    define a function first, which does the job for one specific value `x` in your columns, then use it in die `.apply()` function of a dataframe
+
+    ```python
+    def my_cleaning_function(x):
+        return x.lstrip('_D4hj2', '').rstrip('MON_', '')
+
+    df['column_to_clean'] =  df['column_to_clean'].apply(my_cleaning_function)
+    ```
+
+  * **webscraping**:
+    You want to scrape search results on *imdb* which are presented in multiple pages that you have to click through. Approach: You would want to write the code which scrapes one single page first, maybe even put it into a function. Then find out the pattern of the URL, which all result pages have in common, and then alter your function in a way, that you can input any (search result) url in it. And ultimately construct a loop in which you would generate your desired URL's, throw these into your function which gets executed in every loop, e.g.
+
+    ```python
+    iterations = range(1, 631, 50)
+    for i in iterations:
+    # assemble the url:
+      start_at= str(i)
+      url = "https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,1992-12-31&user_rating=7.5,&start=" + start_at + "&ref_=adv_nxt"
+
+      # download html with a get request:
+      response = requests.get(url)
+
+      # in the following: store that into a soup
+    ```  
 
 
 ---
