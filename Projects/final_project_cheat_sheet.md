@@ -95,6 +95,7 @@ These are all Kaggle data sets, so you can gain some context about them by looki
 
 * ["AnyAPI"](https://any-api.com/)
 * [List of python API wrappers](https://github.com/realpython/list-of-python-api-wrappers)
+* googling `python <sitename> api`
 
 ---
 
