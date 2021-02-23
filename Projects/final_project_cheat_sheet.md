@@ -8,7 +8,7 @@
 
 * Obtain timely feedback on your ideas, plans, progress, and products from the instructional staff. This ensures you stay on the right track and deliver impressive results.
 
-* Borrowed from agile project development: Set a relatively low bar for your first project iteration (meaning: what you want to achieve, which question should be answered?). Then try to reach that first iteration quickly. It doesn't have to look nice. But the idea is: You will now build on that and maybe answer an extended question in the remaining time. For example:
+* Borrowed from agile project development: Set a relatively low bar for your first project iteration - in business language *MVP*, "**Minimum viable product**". Then try to reach that first iteration quickly. It doesn't have to look nice. But the idea is: You will now build on that and maybe answer an extended question in the remaining time. For example
   * 1st iteration: I have lot of animal sound data and I want to train an unsupervised model, which is able to (cluster) predict, whether that sound is a dog barking or not.
   * 2nd iteration: Building on that, I try to predict not only `Dog | No dog` but also multiple categories, e.g. `dog | cat | rattle snake | monkey | none of these`.
 * Be prepared for technical difficulties. Manage your time wisely and pace yourself. Stick to the project agenda strictly.
