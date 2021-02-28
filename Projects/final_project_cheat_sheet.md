@@ -20,8 +20,9 @@
   All of this will help you avoid accidental data loss and is also the easiest way to document your iterative development process.
 
 * Regarding the presentation
+  * The target group for the final project presentations is **a general audience**, meaning not necessarily someone who is into Data Analytics. Think about your relatives or friends. Break down your content that you want to present in a way, that they will understand it, find it interesting and remember it. Since this is the audience, it can be beneficial to rehearse your talk in front of non-technical people (family, friends, etc.)
+  * One exciting tool of audience engagement is always to include the audience (you can talk with class members before your talk... ahem). Some students built a **demonstrator** of their machine learning project, with which they made a real good impression on the general audience. Imagine people having no touching points with ML whatsover being asked live, what their age, body height, profession, hobbies etc. are (if they want to disclose that of course), and then based on these data your ML demonstrator recommends to them a piece of clothing (as a picture)/ a song/ a beer brand/ etc., which meets their approval.
   * test every component and step of your demo. Make sure your demo will run smoothly.
-  * Since the goal here is to address a **general audience** it can be beneficial to rehearse your talk in front of non-technical people (family, friends, etc.)
   * make sure your can work with the **remote tools** (Zoom) to control your presentation (share screen (which?), eventually share sound, pointer, etc.). Feel free to use the zoom classroom to rehearse that in the week before the presentation
   * the day before all presentations start, we give you the opportunity for a final rehearsal in a breakout room in front of the teaching team. This is optional, but a lot of students made good experience with that in the past.
 
